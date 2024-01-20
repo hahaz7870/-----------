@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="./image/favicon.png">
+  <title>The Game</title>
+</head>
+<body>
+  <div class="header">ROCK PAPPER SCISSORS</div>
+
+  <div class="game">
+    <div class="left">
+      <div class="input-block">
+        <div>Игр в партии</div>
+        <input type="text" id="max-games">
+        <button id="apply-max">Применить</button>
+      </div>
+      <div class="all-score">
+        <span>Счет по партиям: </span>
+        <div>Player: <span id="p-final">0</span></div>
+        <div>Computer: <span id="c-final">0</span></div>
+      </div>
+    </div>
+    <div class="center">
+      <div class="menu">
+        <div class="play">
+          <div class="score">
+            <div>Computer Score: 0 - Player Score: 0</div>
+          </div>
+          <div id="result">Game result:</div>
+        </div>
+        <div class="finish"></div>
+        <button id="restart">Restart game</button>
+      </div>
+      <div class="items-menu">
+        <img src="./image/rock.png" alt="rock" class="gameItem" id="rock">
+        <img src="./image/scissors.png" alt="scissors" class="gameItem"
+        id="scissors">
+        <img src="./image/paper.png" alt="paper" class="gameItem" id="paper">
+      </div>
+    </div>
+    <div class="right">
+      <div class="input-block">
+        <div>Введите имя игрока</div>
+        <input type="text" id="username">
+        <button id="apply-max">Войти</button>
+      </div>
+      <div class="stats">
+        <div>Общая статистика</div>
+        <ol>
+          <li>Player 10-15</li>
+        </ol>
+      </div>
+      
+    </div>
+  </div>
+
+  <div class="footer">
+    <a href="https://www.flaticon.com/authors/freepik"
+      title="scissors icons">Icons created by Freepik - Flaticon</a>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
